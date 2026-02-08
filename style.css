@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family:  SF Pro Display , sans-serif;
+  background: linear-gradient(180deg, #f5f7fa, #e4ecf5);
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* رسالة نصية مشوقة */
+#welcome-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.9);
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #ff6f91;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 1000;
+}
+
+/* واجهة الباسورد */
+#login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 35px;
+  width: 85%;
+  max-width: 350px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  font-family:  SF Pro Display , sans-serif;
+}
+
+.login-card i {
+  font-size: 35px;
+  color: #ff6f91;
+}
+
+input, button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-family:  SF Pro Display , sans-serif;
+}
+
+button {
+  background: #ff6f91;
+  color: white;
+  cursor: pointer;
+}
+
+/* الاسم وتاريخ الميلاد */
+.name {
+  font-size: 64px;
+  margin-top: 30px;
+  color: #ff6f91;
+}
+
+.infinity {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.birth {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* كلام الحب مع صورة */
+.love-box {
+  background: rgba(255,255,255,0.85);
+  margin: 20px auto;
+  padding: 22px;
+  width: 85%;
+  border-radius: 22px;
+  line-height: 2;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  position: relative;
+  font-family:  SF Pro Display , sans-serif;
+  opacity: 0; /* fade-in */
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.paragraph-img {
+  width: 100px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* الدبدوب */
+.toys img {
+  width: 120px;
+  margin: 15px;
+}
+
+/* القلوب */
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 16px;
+  color: #ff9aa2;
+  animation: fall 7s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
